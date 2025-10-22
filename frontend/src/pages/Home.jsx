@@ -1,16 +1,15 @@
 import '../App.css';
+import Header from '../components/Header'
+import PostList from '../components/PostList'
+import CreateButton from '../components/CreateButton';
+
 
 export default function Home(){
     return (
-        <div>
-            <div className="flex flex-col justify-center align-items-center">
-                <h1>
-                    title
-                </h1>
-                <h3>
-                    content
-                </h3>
-            </div>
-        </div>
+        <>
+        <Header></Header>
+        <CreateButton></CreateButton>
+        <PostList></PostList>
+        </>
     );
 }
